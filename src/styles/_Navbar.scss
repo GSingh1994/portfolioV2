@@ -64,4 +64,9 @@
       }
     }
   }
+  .hamburger {
+    @include breakpoint($tablet) {
+      display: none;
+    }
+  }
 }
