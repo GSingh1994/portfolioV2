@@ -1,4 +1,11 @@
 @import "Navbar";
-// .App {
-//   background-color: bisque;
-// }
+
+$primary-clr: #f1b631;
+$secondary-clr: #252839;
+$tertiary-clr: #ced8de;
+$dark-secondary: #1b1d2a;
+
+.App {
+  background-color: $secondary-clr;
+  height: 100vh;
+}
