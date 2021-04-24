@@ -1,7 +1,16 @@
+import TypeIt from "typeit-react";
+
 const Intro = () => {
   return (
     <div className="Intro">
-      Hi, My name is <div className="typewriter">Gagandeep Singh</div>
+      <TypeIt
+        className="typewriter"
+        options={{
+          strings: ["> Gagan Singh"],
+          speed: 150,
+          waitUntilVisible: true,
+        }}
+      />
     </div>
   );
 };
