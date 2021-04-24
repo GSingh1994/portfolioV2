@@ -11,7 +11,7 @@ const Navbar = () => {
     <div>
       <nav className="Navbar">
         <div className="logo">
-          <img src={logo} width="32px" alt="logo" />
+          <img src={logo} width="64px" alt="logo" />
         </div>
         <ul>
           <li>Projects</li>
