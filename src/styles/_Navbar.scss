@@ -1,8 +1,4 @@
-$primary-clr: #f1b631;
-$secondary-clr: #252839;
-$tertiary-clr: #ced8de;
-$dark-secondary: #1b1d2a;
-$white: #ffffff;
+@import "common";
 
 .Navbar {
   background-color: $dark-secondary;
@@ -10,11 +6,17 @@ $white: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 6rem;
   ul {
-    display: flex;
+    display: none;
+    @include breakpoint($tablet) {
+      display: flex;
+      width: 30rem;
+    }
+
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+
     color: $tertiary-clr;
     font-size: 1.2rem;
     li {
@@ -60,7 +62,6 @@ $white: #ffffff;
         z-index: 1;
         transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
       }
-      // Button-fill effect ends
     }
   }
 }

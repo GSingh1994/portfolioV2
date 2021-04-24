@@ -1,9 +1,5 @@
 @import "Navbar";
-
-$primary-clr: #f1b631;
-$secondary-clr: #252839;
-$tertiary-clr: #ced8de;
-$dark-secondary: #1b1d2a;
+@import "common";
 
 .App {
   background-color: $secondary-clr;
