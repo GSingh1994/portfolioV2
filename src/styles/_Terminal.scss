@@ -1,0 +1,84 @@
+@import "common";
+
+.Terminal {
+  width: 30rem;
+  @include breakpoint($tablet) {
+    width: 50rem;
+  }
+  margin: 0 auto;
+  font-family: "Fira Code", monospace;
+  border-radius: 6px;
+  overflow: hidden;
+  .header {
+    display: flex;
+    background-color: $primary-clr;
+    justify-content: space-between;
+    padding: 0.3rem 1rem;
+    font-weight: bold;
+  }
+  .navBtns {
+    display: flex;
+    width: 4rem;
+    justify-content: space-between;
+    img {
+      width: 1rem;
+    }
+  }
+  .main {
+    height: 40rem;
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 1.5rem;
+    .key {
+      color: $tertiary-clr;
+      line-height: 2rem;
+    }
+    .value {
+      color: $primary-clr;
+      a {
+        color: $link-clr;
+      }
+    }
+    .lastLine {
+      display: flex;
+      align-items: center;
+      width: 2rem;
+      justify-content: space-between;
+      color: $tertiary-clr;
+    }
+  }
+}
+.cursor {
+  //   background: $primary-clr;
+  line-height: 17px;
+  margin-left: 3px;
+  -webkit-animation: blink 0.8s infinite;
+  animation: blink 0.8s infinite;
+  width: 7px;
+  height: 15px;
+}
+
+@keyframes blink {
+  0% {
+    background: #222;
+  }
+  50% {
+    background: $primary-clr;
+  }
+  100% {
+    background: #222;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    background: #222;
+  }
+  50% {
+    background: $primary-clr;
+  }
+  100% {
+    background: #222;
+  }
+}

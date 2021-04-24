@@ -3,8 +3,15 @@ $secondary-clr: #252839;
 $tertiary-clr: #ced8de;
 $dark-secondary: #1b1d2a;
 $white: #ffffff;
+$black: #272822;
+$link-clr: #a6e22e;
+// $black: #151515;
+
 $tablet: 768px;
 $desktop: 1024px;
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Noto+Sans:wght@400;700&display=swap");
 @import "breakpoint-sass";
+
+// font-family: 'Fira Code', monospace;
+// font-family: 'Noto Sans', sans-serif;

@@ -2,11 +2,15 @@
 
 .Navbar {
   background-color: $dark-secondary;
-  padding: 1.7rem 4rem;
+  padding: 1.5rem 1rem;
+  @include breakpoint($tablet) {
+    padding: 1.7rem 4rem;
+  }
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 6rem;
+  height: 5rem;
   .logo {
     filter: invert(100%);
   }

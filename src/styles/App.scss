@@ -1,8 +1,9 @@
 @import "common";
 @import "Navbar";
 @import "Intro";
+@import "Terminal";
 
 .App {
   background-color: $secondary-clr;
-  height: 100vh;
+  // height: 100vh;
 }
