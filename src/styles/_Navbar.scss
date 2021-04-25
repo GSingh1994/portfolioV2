@@ -5,6 +5,7 @@
   padding: 1.5rem 1rem;
   @include breakpoint($tablet) {
     padding: 1.7rem 4rem;
+    height: 6rem;
   }
 
   display: flex;

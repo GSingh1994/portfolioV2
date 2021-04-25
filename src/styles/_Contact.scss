@@ -1,0 +1,38 @@
+@import "common";
+
+.Contact {
+  width: 30rem;
+  margin: 0 auto;
+  color: $tertiary-clr;
+  h2 {
+    color: $primary-clr;
+    margin: 2rem;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  p {
+    margin: 0 1rem;
+  }
+  form {
+    margin-top: 2rem;
+    label {
+      display: block;
+    }
+    #email,
+    #message {
+      width: 100%;
+      font-size: 1.1rem;
+      padding: 0.4rem;
+      border-radius: 3px;
+      outline: none;
+      border: none;
+    }
+    .send-btn {
+      font-size: 1.3rem;
+      padding: 0.6rem;
+      img {
+        width: 1rem;
+      }
+    }
+  }
+}

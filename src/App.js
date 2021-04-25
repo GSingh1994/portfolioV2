@@ -3,8 +3,7 @@ import Navbar from "./componenets/Navbar";
 import Intro from "./componenets/Intro";
 import Terminal from "./componenets/Terminal";
 import Projects from "./componenets/Projects";
-// import Project from "./componenets/Project";
-import Footer from "./componenets/Footer";
+import Contact from "./componenets/Contact";
 function App() {
   return (
     <div className="App">
@@ -12,7 +11,7 @@ function App() {
       <Intro />
       <Terminal />
       <Projects />
-      <Footer />
+      <Contact />
     </div>
   );
 }
