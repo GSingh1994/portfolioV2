@@ -5,9 +5,15 @@
   margin: 3rem auto;
   font-family: "Noto Sans", sans-serif;
   text-align: center;
+  .name,
+  .moreInfo {
+    color: $tertiary-clr;
+    font-size: 1.2rem;
+  }
   .typewriter {
     font-size: 3rem;
     letter-spacing: 0.1rem;
     font-weight: bold;
+    margin: 1rem;
   }
 }

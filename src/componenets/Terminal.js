@@ -49,7 +49,8 @@ const Terminal = () => {
         <div className="object">
           <div className="key">{"> gagan.interests"}</div>
           <div className="value">
-            [Coding, Book reading, Writing, building PCs, Tweaking Raspberry π]
+            [Coding, Book reading,Listening Podcasts, Writing, building PCs,
+            Tweaking Raspberry π]
           </div>
         </div>
         <div className="lastLine">

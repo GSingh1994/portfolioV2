@@ -1,0 +1,65 @@
+@import "common";
+.Projects {
+  h2 {
+    color: $primary-clr;
+    text-align: center;
+    margin: 2rem;
+    font-size: 2.2rem;
+  }
+  blockquote {
+    text-align: center;
+    color: $tertiary-clr;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 80rem;
+    margin: 2rem auto;
+  }
+}
+
+.project-card {
+  background-color: $dark-secondary;
+  padding: 1rem;
+  border-radius: 3px;
+  .title {
+    color: $white;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+  .description {
+    color: $tertiary-clr;
+  }
+  .techItems {
+    display: flex;
+    color: $tertiary-clr;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 13rem;
+    .tech {
+      border: 1px solid rgba(241, 182, 49, 0.5);
+      background-color: rgba(206, 216, 222, 0.1);
+      padding: 0.2rem;
+    }
+  }
+  .buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+    .btn {
+      outline: none;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .demo {
+      background-color: $primary-clr;
+    }
+    .source {
+      background-color: $white;
+    }
+  }
+}

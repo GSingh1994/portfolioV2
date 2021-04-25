@@ -1,0 +1,31 @@
+const ProjectCards = ({
+  title,
+  description,
+  technology,
+  demoLink,
+  sourceLink,
+}) => {
+  const techItems = technology.map((tech, i) => (
+    <li key={i} className="tech">
+      {tech}
+    </li>
+  ));
+  return (
+    <div className="project-card">
+      <h3 className="title">{title}</h3>
+      <div className="description">{description}</div>
+      <ul className="techItems">{techItems}</ul>
+
+      <div className="buttons">
+        <a href={demoLink}>
+          <button className="btn demo">Live Demo</button>
+        </a>
+        <a href={sourceLink}>
+          <button className="btn source">Source</button>
+        </a>
+      </div>
+    </div>
+  );
+};
+
+export default ProjectCards;
