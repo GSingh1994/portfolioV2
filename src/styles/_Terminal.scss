@@ -1,11 +1,17 @@
 @import "common";
 
 .Terminal {
-  width: 30rem;
+  // width: 30rem;
+  // padding: 0 1rem;
+  margin: 0 1rem;
   @include breakpoint($tablet) {
     width: 50rem;
+    margin: 0 auto;
   }
-  margin: 0 auto;
+  @include breakpoint($desktop) {
+    width: 55rem;
+  }
+
   font-family: "Fira Code", monospace;
   border-radius: 6px;
   overflow: hidden;

@@ -5,7 +5,7 @@ const Terminal = () => {
   return (
     <div className="Terminal">
       <div className="header">
-        <div className="title">gagan.js</div>
+        <div className="title">info.js</div>
         <div className="navBtns">
           <img src={minBtn} alt="minimise button" />
           <img src={maxBtn} alt="maximise button" />

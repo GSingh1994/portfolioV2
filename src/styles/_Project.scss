@@ -9,13 +9,23 @@
   blockquote {
     text-align: center;
     color: $tertiary-clr;
+    margin: 0 1rem;
   }
   .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    width: 80rem;
-    margin: 2rem auto;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 2rem 1rem;
+    @include breakpoint($phone) {
+      margin: 2rem 2rem;
+    }
+    @include breakpoint($tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include breakpoint($desktop) {
+      grid-template-columns: repeat(3, 1fr);
+      margin: 2rem 12rem;
+    }
   }
 }
 
