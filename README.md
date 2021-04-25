@@ -4,7 +4,7 @@
 <img alt='Netlify badge' src='https://api.netlify.com/api/v1/badges/87178c10-26d4-41a0-a04f-8cb39abb2216/deploy-status'/>
 </p>
 
-# This is my second iteration of personal portfolio.
+# This is second iteration of my personal portfolio.
 
 
 ## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
