@@ -1,0 +1,19 @@
+@import "common";
+.Footer {
+  margin-top: 3rem;
+  background-color: $dark-secondary;
+  color: $tertiary-clr;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  .rightFooter {
+    display: flex;
+    justify-content: space-between;
+    width: 18rem;
+    img {
+      width: 1.2rem;
+      filter: invert(100%);
+      cursor: pointer;
+    }
+  }
+}

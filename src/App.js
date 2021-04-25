@@ -4,6 +4,7 @@ import Intro from "./componenets/Intro";
 import Terminal from "./componenets/Terminal";
 import Projects from "./componenets/Projects";
 import Contact from "./componenets/Contact";
+import Footer from "./componenets/Footer";
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
       <Terminal />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }
