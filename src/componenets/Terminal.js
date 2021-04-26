@@ -1,6 +1,7 @@
 import minBtn from "../assets/min-btn.svg";
 import maxBtn from "../assets/restore-btn.svg";
 import closeBtn from "../assets/close-btn.svg";
+import resume from "../assets/gSingh.pdf";
 const Terminal = () => {
   return (
     <div className="Terminal">
@@ -32,7 +33,7 @@ const Terminal = () => {
         <div className="object">
           <div className="key">{"> gagan.resume"}</div>
           <div className="value">
-            <a href="../assets/gSingh.pdf">gSingh.pdf</a>
+            <a href={resume}>gSingh.pdf</a>
           </div>
         </div>
         <div className="object">
