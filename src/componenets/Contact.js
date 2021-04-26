@@ -11,13 +11,7 @@ const Contact = () => {
       <form action="">
         <div>
           <label htmlFor="email">email:</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="email"
-            required
-          />
+          <input type="email" name="email" id="email" required />
         </div>
 
         <div>
