@@ -8,7 +8,7 @@ const Contact = () => {
         to say hello, send me a message. I'd love to hear from you.
       </p>
 
-      <form method="POST" name="contact" data-netlify="true">
+      <form method="POST" name="contact">
         <input type="hidden" name="form-name" value="contact" />
         <div>
           <label htmlFor="email">email:</label>
