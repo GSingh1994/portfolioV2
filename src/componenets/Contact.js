@@ -24,7 +24,7 @@ const Contact = () => {
           ></textarea>
         </div>
 
-        <button className="send-btn">
+        <button type="submit" className="send-btn">
           <span>Send</span> <img src={sendIcon} alt="" />
         </button>
       </form>
