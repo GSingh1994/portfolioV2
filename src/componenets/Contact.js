@@ -8,7 +8,7 @@ const Contact = () => {
         to say hello, send me a message. I'd love to hear from you.
       </p>
 
-      <form name="contact" data-netlify="true">
+      <form method="POST" name="contact" data-netlify="true">
         <div>
           <label htmlFor="email">email:</label>
           <input type="email" name="email" id="email" required />
