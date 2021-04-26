@@ -4,7 +4,7 @@ import closeBtn from "../assets/close-btn.svg";
 import resume from "../assets/gSingh.pdf";
 const Terminal = () => {
   return (
-    <div className="Terminal">
+    <div className="Terminal" id="Terminal">
       <div className="header">
         <div className="title">info.js</div>
         <div className="navBtns">

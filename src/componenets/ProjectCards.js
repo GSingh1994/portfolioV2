@@ -17,10 +17,10 @@ const ProjectCards = ({
       <ul className="techItems">{techItems}</ul>
 
       <div className="buttons">
-        <a href={demoLink}>
+        <a href={demoLink} target="_blank" rel="noreferrer">
           <button className="btn demo">Live Demo</button>
         </a>
-        <a href={sourceLink}>
+        <a href={sourceLink} target="_blank" rel="noreferrer">
           <button className="btn source">Source</button>
         </a>
       </div>

@@ -1,7 +1,7 @@
 import sendIcon from "../assets/send.svg";
 const Contact = () => {
   return (
-    <div className="Contact">
+    <div className="Contact" id="Contact">
       <h2>{"> Contact me"}</h2>
       <p>
         If you want to know more about me or my work, or if you would just like

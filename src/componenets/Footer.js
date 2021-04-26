@@ -6,9 +6,27 @@ const Footer = () => {
       <div className="copyRight">© 2021 Gagandeep Singh</div>
 
       <div className="icons">
-        <img src={logoGithub} alt="" />
-        <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="" />
-        <img src={logoLinkedin} alt="" />
+        <a
+          href="https://github.com/GSingh1994"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={logoGithub} alt="Github logo" />
+        </a>
+
+        <a href="https://dev.to/gsingh" target="_blank" rel="noreferrer">
+          <img
+            src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
+            alt="Dev logo"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/gagandeep-singh1994/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={logoLinkedin} alt="Linkedin logo" />
+        </a>
       </div>
 
       <div className="madeWith">Made with ☕</div>

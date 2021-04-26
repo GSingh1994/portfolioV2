@@ -9,12 +9,18 @@ const Navbar = () => {
   };
   return (
     <div>
-      <nav className="Navbar">
+      <nav className="Navbar" id="Navbar">
         <img className="logo" src={logo} width="64px" alt="logo" />
         <ul className={isActive ? "top-down" : "normal-nav"}>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <a href="#Projects">Projects</a>{" "}
+          </li>
+          <li>
+            <a href="#Terminal">About</a>
+          </li>
+          <li>
+            <a href="#Contact">Contact</a>
+          </li>
           <li>
             <button className="resume-btn">
               <span>Resume</span>
