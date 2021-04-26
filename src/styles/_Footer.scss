@@ -4,14 +4,21 @@
   background-color: $dark-secondary;
   color: $tertiary-clr;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 1.3rem;
+  align-items: center;
   padding: 2rem;
-  .rightFooter {
+  @include breakpoint($tablet) {
+    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .icons {
     display: flex;
     justify-content: space-between;
-    width: 18rem;
+    width: 8rem;
     img {
-      width: 1.2rem;
+      width: 1.4rem;
       filter: invert(100%);
       cursor: pointer;
     }
