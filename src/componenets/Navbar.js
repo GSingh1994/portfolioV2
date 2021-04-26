@@ -7,6 +7,23 @@ const Navbar = () => {
   const toggleClass = () => {
     setActive(!isActive);
   };
+
+  // Fix nav back on reverse scroll
+  let prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    const navbarStyle = document.getElementById("Navbar").style;
+
+    if (currentScrollPos < 50) {
+      navbarStyle.backgroundColor = "#252839"; //$secondary-clr
+    } else if (prevScrollpos > currentScrollPos) {
+      navbarStyle.top = "0";
+      navbarStyle.backgroundColor = "rgba(27, 29, 42, 0.7)"; //$dark-secondary
+    } else {
+      navbarStyle.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+  };
   return (
     <div>
       <nav className="Navbar" id="Navbar">

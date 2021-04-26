@@ -1,11 +1,16 @@
 @import "common";
 
 .Navbar {
-  background-color: $dark-secondary;
   color: $tertiary-clr;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s;
+  padding-left: 1rem;
+  backdrop-filter: blur(10px);
   @include breakpoint($tablet) {
-    padding: 1.7rem 4rem;
-    height: 6rem;
+    padding: 1.5rem 4rem;
+    height: 5rem;
   }
   display: flex;
   align-items: center;
