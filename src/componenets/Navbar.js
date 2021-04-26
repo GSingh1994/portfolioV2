@@ -11,8 +11,7 @@ const Navbar = () => {
     <div>
       <nav className="Navbar">
         <img className="logo" src={logo} width="64px" alt="logo" />
-
-        <ul>
+        <ul className={isActive ? "top-down" : "normal-nav"}>
           <li>Projects</li>
           <li>About</li>
           <li>Contact</li>
