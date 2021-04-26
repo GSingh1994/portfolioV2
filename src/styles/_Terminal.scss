@@ -1,11 +1,9 @@
 @import "common";
 
 .Terminal {
-  // width: 30rem;
-  // padding: 0 1rem;
   margin: 0 1rem;
   @include breakpoint($tablet) {
-    width: 50rem;
+    width: 46rem;
     margin: 0 auto;
   }
   @include breakpoint($desktop) {

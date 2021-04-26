@@ -9,24 +9,29 @@ const Contact = () => {
       </p>
 
       <form action="">
-        <label htmlFor="email">email:</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="email"
-          required
-        />
+        <div>
+          <label htmlFor="email">email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email"
+            required
+          />
+        </div>
 
-        <label htmlFor="message">message:</label>
-        <textarea
-          name="message"
-          id="message"
-          rows="8"
-          placeholder="Hey how's it going?"
-        ></textarea>
+        <div>
+          <label htmlFor="message">message:</label>
+          <textarea
+            name="message"
+            id="message"
+            rows="8"
+            placeholder="Hey how's it going?"
+          ></textarea>
+        </div>
+
         <button className="send-btn">
-          Send <img src={sendIcon} alt="" />
+          <span>Send</span> <img src={sendIcon} alt="" />
         </button>
       </form>
     </div>
