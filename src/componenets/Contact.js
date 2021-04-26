@@ -9,6 +9,7 @@ const Contact = () => {
       </p>
 
       <form method="POST" name="contact" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
         <div>
           <label htmlFor="email">email:</label>
           <input type="email" name="email" id="email" required />
