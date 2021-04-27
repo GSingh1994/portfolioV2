@@ -17,7 +17,6 @@ const Navbar = function () {
   window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
     const navbarStyle = document.getElementById("Navbar").style;
-
     if (currentScrollPos < 50) {
       navbarStyle.backgroundColor = "#252839"; //$secondary-clr
     } else if (prevScrollpos > currentScrollPos) {
@@ -30,9 +29,10 @@ const Navbar = function () {
     prevScrollpos = currentScrollPos;
   };
 
-  if (window.innerWidth > 500) {
-    console.log("yup");
-  }
+  window.addEventListener("resize", function () {
+    setActive(false);
+  });
+
   return (
     <div>
       <nav className="Navbar" id="Navbar">
