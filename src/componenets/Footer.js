@@ -29,7 +29,9 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="madeWith">Made with ☕</div>
+      <div className="madeWith">
+        Made with <span>☕</span>{" "}
+      </div>
     </div>
   );
 };

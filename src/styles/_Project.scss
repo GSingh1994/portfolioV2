@@ -36,6 +36,9 @@
   background-color: $dark-secondary;
   padding: 1rem;
   border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   .title {
     color: $white;
     margin-bottom: 1rem;
@@ -47,26 +50,27 @@
   .techItems {
     display: flex;
     color: $tertiary-clr;
-    justify-content: space-between;
     margin-top: 1rem;
-    width: 13rem;
     .tech {
       border: 1px solid rgba(241, 182, 49, 0.5);
       background-color: rgba(206, 216, 222, 0.1);
       padding: 0.2rem;
+      margin-right: 0.7rem;
     }
   }
   .buttons {
     margin-top: 1rem;
     display: flex;
-    justify-content: space-between;
-    width: 10rem;
     .btn {
       outline: none;
       border: none;
       padding: 0.5rem;
-      border-radius: 4px;
       cursor: pointer;
+      margin-right: 0.7rem;
+      transition: all 0.2s ease-out;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
     .demo {
       background-color: $primary-clr;

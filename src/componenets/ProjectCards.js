@@ -12,17 +12,21 @@ const ProjectCards = ({
   ));
   return (
     <div className="project-card">
-      <h3 className="title">{title}</h3>
-      <div className="description">{description}</div>
-      <ul className="techItems">{techItems}</ul>
+      <div>
+        <h3 className="title">{title}</h3>
+        <div className="description">{description}</div>
+      </div>
+      <div>
+        <ul className="techItems">{techItems}</ul>
 
-      <div className="buttons">
-        <a href={demoLink} target="_blank" rel="noreferrer">
-          <button className="btn demo">Live Demo</button>
-        </a>
-        <a href={sourceLink} target="_blank" rel="noreferrer">
-          <button className="btn source">Source</button>
-        </a>
+        <div className="buttons">
+          <a href={demoLink} target="_blank" rel="noreferrer">
+            <button className="btn demo">Live Demo</button>
+          </a>
+          <a href={sourceLink} target="_blank" rel="noreferrer">
+            <button className="btn source">Source</button>
+          </a>
+        </div>
       </div>
     </div>
   );

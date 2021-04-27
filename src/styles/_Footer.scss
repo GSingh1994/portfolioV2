@@ -17,11 +17,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 8rem;
+    width: 10rem;
     img {
       width: 1.8rem;
       filter: invert(100%);
       cursor: pointer;
     }
+  }
+  .madeWith {
+    display: flex;
+    gap: 0.6rem;
   }
 }
