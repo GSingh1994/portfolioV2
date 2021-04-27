@@ -41,7 +41,7 @@ const Navbar = function () {
         </a>
         <ul className={isActive ? "top-down" : null}>
           <li>
-            <a href="#Projects">Projects</a>{" "}
+            <a href="#Projects">Projects</a>
           </li>
           <li>
             <a href="#Terminal">About</a>
