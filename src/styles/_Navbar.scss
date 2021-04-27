@@ -6,31 +6,53 @@
   top: 0;
   width: 100%;
   transition: all 0.3s;
-  padding-left: 1rem;
+
   backdrop-filter: blur(10px);
-  @include breakpoint($tablet) {
-    padding: 1.5rem 4rem;
-    height: 5rem;
-  }
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 4rem;
+  @include breakpoint($tablet) {
+    padding: 1.5rem 4rem;
+    height: 5rem;
+  }
   .logo {
     width: 2.5rem;
     filter: invert(100%);
+    margin-left: 1rem;
+    @include breakpoint($tablet) {
+      margin-left: 0;
+    }
   }
-  .normal-nav {
-    display: none;
+  ul {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
+    position: absolute;
+    top: -14rem;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(27, 29, 42, 0.9);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    transition: all 0.5s ease-out;
 
     @include breakpoint($tablet) {
-      display: flex;
       width: 30rem;
+      position: static;
+      flex-direction: row;
+      background-color: transparent;
+      transition: none;
     }
   }
+  .top-down {
+    display: flex;
+    height: 20rem;
+    margin-top: 12rem;
+    padding-bottom: 3rem;
+  }
+
   li {
     &:hover {
       cursor: pointer;
@@ -42,32 +64,34 @@
       display: none;
     }
   }
-  .top-down {
-    position: absolute;
-    margin-top: 12rem;
-    padding: 3rem 0;
-    background-color: rgba(27, 29, 42, 0.8);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    animation: top-down 0.7s;
-    backdrop-filter: blur(10px);
-  }
+
   a {
     color: inherit;
   }
 }
 
-@keyframes top-down {
-  0% {
-    margin-top: -10rem;
-  }
-  100% {
-    margin-top: 12rem;
-  }
-}
+// .top-down {
+//   position: absolute;
+//   margin-top: 12rem;
+//   padding: 3rem 0;
+//   background-color: rgba(27, 29, 42, 0.8);
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 2rem;
+//   align-items: center;
+//   transition: all 1s ease;
+//   backdrop-filter: blur(10px);
+//   // animation: top-down 0.7s;
+// }
+// @keyframes top-down {
+//   0% {
+//     margin-top: -10rem;
+//   }
+//   100% {
+//     margin-top: 12rem;
+//   }
+// }
 
 .resume-btn {
   padding: 0.5rem;

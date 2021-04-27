@@ -7,7 +7,7 @@ import Contact from "./componenets/Contact";
 import Footer from "./componenets/Footer";
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="App">
       <Navbar />
       <Intro />
       <Terminal />

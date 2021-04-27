@@ -1,12 +1,16 @@
 import React, { useState } from "react";
+import onClickOutside from "react-onclickoutside";
 import logo from "../assets/myLogo.svg";
 import "../styles/hamburger.scss";
 
-const Navbar = () => {
+const Navbar = function () {
   const [isActive, setActive] = useState(false);
   const toggleClass = () => {
     setActive(!isActive);
   };
+
+  // Hide navbar onClick outside
+  Navbar.handleClickOutside = () => setActive(isActive);
 
   // Fix nav back on reverse scroll
   let prevScrollpos = window.pageYOffset;
@@ -21,14 +25,21 @@ const Navbar = () => {
       navbarStyle.backgroundColor = "rgba(27, 29, 42, 0.7)"; //$dark-secondary
     } else {
       navbarStyle.top = "-100px";
+      setActive(false);
     }
     prevScrollpos = currentScrollPos;
   };
+
+  if (window.innerWidth > 500) {
+    console.log("yup");
+  }
   return (
     <div>
       <nav className="Navbar" id="Navbar">
-        <img className="logo" src={logo} width="64px" alt="logo" />
-        <ul className={isActive ? "top-down" : "normal-nav"}>
+        <a href="#App">
+          <img className="logo" src={logo} width="64px" alt="logo" />
+        </a>
+        <ul className={isActive ? "top-down" : null}>
           <li>
             <a href="#Projects">Projects</a>{" "}
           </li>
@@ -63,4 +74,8 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+const clickOutsideConfig = {
+  handleClickOutside: () => Navbar.handleClickOutside,
+};
+
+export default onClickOutside(Navbar, clickOutsideConfig);
