@@ -35,21 +35,24 @@
       width: 100%;
       font-size: 1.1rem;
       padding: 0.4rem;
-      border-radius: 3px;
       outline: none;
       border: none;
       background-color: $tertiary-clr;
+      color: $black;
     }
     .send-btn {
-      font-size: 1rem;
-      padding: 0.4rem;
+      padding: 0.7rem;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      width: 4.5rem;
+      justify-content: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+      background-color: $primary-clr;
+      text-transform: uppercase;
       border: 1px solid $dark-secondary;
       img {
         width: 0.8rem;
+        margin-left: 0.3rem;
       }
     }
   }

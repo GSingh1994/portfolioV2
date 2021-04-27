@@ -12,7 +12,13 @@ const Contact = () => {
         <input type="hidden" name="form-name" value="contact" />
         <div>
           <label htmlFor="email">email:</label>
-          <input type="email" name="email" id="email" required />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="lorem@ipsum.com"
+            required
+          />
         </div>
 
         <div>
@@ -20,7 +26,7 @@ const Contact = () => {
           <textarea
             name="message"
             id="message"
-            rows="8"
+            rows="6"
             placeholder="Hey how's it going?"
           ></textarea>
         </div>
