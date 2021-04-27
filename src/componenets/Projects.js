@@ -20,7 +20,7 @@ const Projects = () => {
         <ProjectCards
           title={"Tech Docs"}
           description={
-            "PWA made to save my programming notes and some useful web-dev tools that I refer on regular basis. When I start learning code, I couldn't able to find any minimal web-app for this so, I decided to make my own"
+            "PWA made to save my programming notes and some useful web-dev tools that I refer on regular basis. When I start learning code, I couldn't able to find any minimal web-app for this so, I decided to make my own."
           }
           technology={["HTML", "Less", "javaScript", "Prism.js"]}
           demoLink={"https://gsingh1994.github.io/my_Documentation/"}
@@ -31,7 +31,7 @@ const Projects = () => {
           description={
             "I made this app to store books that I've read so far. This app helped in fully understanding Constructors and prototypal inheritance. All book images are fetched from Google books API and user's data is also saved on the browser's local storage."
           }
-          technology={["HTML", "SASS", "javaScript", "Google API"]}
+          technology={["HTML", "SASS", "javaScript"]}
           demoLink={"https://gsingh1994.github.io/Library_App/"}
           sourceLink={"https://github.com/GSingh1994/Library_App"}
         />

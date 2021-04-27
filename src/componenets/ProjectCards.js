@@ -1,3 +1,4 @@
+import gitLogo from "../assets/logo-github.svg";
 const ProjectCards = ({
   title,
   description,
@@ -24,7 +25,9 @@ const ProjectCards = ({
             <button className="btn demo">Live Demo</button>
           </a>
           <a href={sourceLink} target="_blank" rel="noreferrer">
-            <button className="btn source">Source</button>
+            <button className="btn source">
+              <img src={gitLogo} alt="" /> Source
+            </button>
           </a>
         </div>
       </div>
