@@ -41,8 +41,8 @@ const Projects = () => {
             "It's the site you are currently visiting. It's an updated version of my old dev portfolio. Everything is responsive and the logo-animation was made in Figma. This website was made after learning Figma and react animations."
           }
           technology={["SASS", "React", "Figma"]}
-          demoLink={"https://gsingh1994.github.io/calculator/"}
-          sourceLink={"https://github.com/GSingh1994/calculator"}
+          demoLink={"https://gagansingh.dev"}
+          sourceLink={"https://github.com/GSingh1994/portfolioV2"}
         />
         <ProjectCards
           title={"Restaurant-page"}
@@ -50,8 +50,8 @@ const Projects = () => {
             "This is a single-page application,  created to learn npm, Less and Webpack. This project has also expanded my knowledge of ES6 module-based programming and dynamic DOM manipulation."
           }
           technology={["HTML", "Less", "javaScript", "Webpack"]}
-          demoLink={"https://gsingh1994.github.io/calculator/"}
-          sourceLink={"https://github.com/GSingh1994/calculator"}
+          demoLink={"https://gsingh1994.github.io/restaurant-page/"}
+          sourceLink={"https://github.com/GSingh1994/restaurant-page"}
         />
 
         <ProjectCards
