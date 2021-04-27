@@ -41,17 +41,17 @@ const Navbar = function () {
           <img className="logo" src={logo} width="64px" alt="logo" />
         </a>
         <ul className={isActive ? "top-down" : null}>
-          <li onClick={toggleClass}>
+          <li>
             <a href="#Projects">Projects</a>
           </li>
-          <li onClick={toggleClass}>
+          <li>
             <a href="#Terminal">About</a>
           </li>
-          <li onClick={toggleClass}>
+          <li>
             <a href="#Contact">Contact</a>
           </li>
           <li>
-            <button onClick={toggleClass} className="resume-btn">
+            <button className="resume-btn">
               <span>
                 <a href={resume} target="_blank" rel="noreferrer">
                   Resume
