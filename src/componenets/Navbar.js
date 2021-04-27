@@ -25,7 +25,7 @@ const Navbar = function () {
       navbarStyle.backgroundColor = "rgba(27, 29, 42, 0.7)"; //$dark-secondary
     } else {
       navbarStyle.top = "-100px";
-      // setActive(false);
+      setActive(false);
     }
     prevScrollpos = currentScrollPos;
   };
