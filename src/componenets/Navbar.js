@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import onClickOutside from "react-onclickoutside";
 import logo from "../assets/myLogo.svg";
 import "../styles/hamburger.scss";
+import resume from "../assets/gSingh.pdf";
 
 const Navbar = function () {
   const [isActive, setActive] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = function () {
       navbarStyle.backgroundColor = "rgba(27, 29, 42, 0.7)"; //$dark-secondary
     } else {
       navbarStyle.top = "-100px";
-      setActive(false);
+      // setActive(false);
     }
     prevScrollpos = currentScrollPos;
   };
@@ -40,18 +41,22 @@ const Navbar = function () {
           <img className="logo" src={logo} width="64px" alt="logo" />
         </a>
         <ul className={isActive ? "top-down" : null}>
-          <li>
+          <li onClick={toggleClass}>
             <a href="#Projects">Projects</a>
           </li>
-          <li>
+          <li onClick={toggleClass}>
             <a href="#Terminal">About</a>
           </li>
-          <li>
+          <li onClick={toggleClass}>
             <a href="#Contact">Contact</a>
           </li>
           <li>
-            <button className="resume-btn">
-              <span>Resume</span>
+            <button onClick={toggleClass} className="resume-btn">
+              <span>
+                <a href={resume} target="_blank" rel="noreferrer">
+                  Resume
+                </a>
+              </span>
             </button>
           </li>
         </ul>

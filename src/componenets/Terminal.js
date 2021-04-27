@@ -33,7 +33,9 @@ const Terminal = () => {
         <div className="object">
           <div className="key">{"> gagan.resume"}</div>
           <div className="value">
-            <a href={resume}>gSingh.pdf</a>
+            <a href={resume} target="_blank" rel="noreferrer">
+              gSingh.pdf
+            </a>
           </div>
         </div>
         <div className="object">
