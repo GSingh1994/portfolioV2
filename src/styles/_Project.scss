@@ -45,6 +45,13 @@
   }
   .description {
     color: $tertiary-clr;
+    a {
+      text-decoration: underline;
+      color: inherit;
+      &:hover {
+        color: $primary-clr;
+      }
+    }
   }
   .techItems {
     display: flex;
