@@ -38,7 +38,20 @@ const Projects = () => {
         <ProjectCards
           title={"gagansingh.dev"}
           description={
-            "It's the site you are currently visiting. It's an updated version of my old dev portfolio. Everything is responsive and the logo-animation was made in Figma. This website was made after learning Figma and react animations."
+            <div>
+              It's the site you are currently visiting. It's an updated version
+              of my{" "}
+              <a
+                href="https://old-folioport.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                old dev portfolio
+              </a>
+              . Everything is responsive and the logo-animation was made in
+              Figma. This website was made after learning Figma and react
+              animations.
+            </div>
           }
           technology={["SASS", "React", "Figma"]}
           demoLink={"https://gagansingh.dev"}
