@@ -64,6 +64,13 @@ const Projects = () => {
           sourceLink={"https://github.com/GSingh1994/RPS_Game"}
         />
       </div>
+      <a
+        href="https://old-folioport.netlify.app/more.html"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button className="moreBtn">See More</button>
+      </a>
     </div>
   );
 };
