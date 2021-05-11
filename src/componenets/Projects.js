@@ -1,5 +1,7 @@
+import { useState } from "react";
 import ProjectCards from "./ProjectCards";
 const Projects = () => {
+  const [showMore, setShowMore] = useState(false);
   return (
     <div className="Projects" id="Projects">
       <h2>{"> Projects"}</h2>
@@ -9,34 +11,38 @@ const Projects = () => {
 
       <div className="container">
         <ProjectCards
-          title={"G-Tech"}
-          description={
-            "An e-commerce website made while studying at the Boot camp by ComIT. This was my final project at ComIT made to showcase my understanding of React, React-Router and Bootstrap."
-          }
+          title="Easy CV"
+          description="Single page React app made while learing react hooks. User can easily create,edit and download resume in pdf format. User can also preview resume while editing because everything is rendered in real-time. "
+          technology={["React", "SASS", "React-Pdf"]}
+          demoLink="https://gsingh1994.github.io/cv-project/"
+          sourceLink="https://github.com/GSingh1994/cv-project"
+        />
+
+        <ProjectCards
+          title="Shoppies"
+          description="This app was created to get qualified for Shopify's Front-end internship. User can search any movie by title and  press the nominate button to add any 5 movies to the nomination list. This App use local storage to save user's data."
+          technology={["React", "Material Ui", "OMDB API"]}
+          demoLink="https://gsingh1994.github.io/shopifyChallenge/"
+          sourceLink="https://github.com/GSingh1994/shopifyChallenge"
+        />
+
+        <ProjectCards
+          title="G-Tech"
+          description="An e-commerce website made while studying at the Boot camp by ComIT. This was my final project at ComIT made to showcase my understanding of React, React-Router and Bootstrap."
           technology={["React", "Bootstrap", "javaScript"]}
-          demoLink={"https://g-tech.netlify.app/"}
-          sourceLink={"https://github.com/GSingh1994/Final_Project"}
+          demoLink="https://g-tech.netlify.app/"
+          sourceLink="https://github.com/GSingh1994/Final_Project"
         />
         <ProjectCards
-          title={"Tech Docs"}
-          description={
-            "PWA made to save my programming notes and some useful web-dev tools that I refer on regular basis. When I start learning code, I couldn't able to find any minimal web-app for this so, I decided to make my own."
-          }
+          title="Tech Docs"
+          description="PWA made to save my programming notes and some useful web-dev tools that I refer on regular basis. When I start learning code, I couldn't able to find any minimal web-app for this so, I decided to make my own."
           technology={["HTML", "Less", "javaScript", "Prism.js"]}
-          demoLink={"https://gsingh1994.github.io/my_Documentation/"}
-          sourceLink={"https://github.com/GSingh1994/my_Documentation"}
+          demoLink="https://gsingh1994.github.io/my_Documentation/"
+          sourceLink="https://github.com/GSingh1994/my_Documentation"
         />
+
         <ProjectCards
-          title={"Library App"}
-          description={
-            "I made this app to store books that I've read so far. This app helped in fully understanding Constructors and prototypal inheritance. All book images are fetched from Google books API and user's data is also saved on the browser's local storage."
-          }
-          technology={["HTML", "SASS", "javaScript"]}
-          demoLink={"https://gsingh1994.github.io/Library_App/"}
-          sourceLink={"https://github.com/GSingh1994/Library_App"}
-        />
-        <ProjectCards
-          title={"gagansingh.dev"}
+          title="gagansingh.dev"
           description={
             <div>
               It's the site you are currently visiting. It's an updated version
@@ -54,36 +60,80 @@ const Projects = () => {
             </div>
           }
           technology={["SASS", "React", "Figma"]}
-          demoLink={"https://gagansingh.dev"}
-          sourceLink={"https://github.com/GSingh1994/portfolioV2"}
-        />
-        <ProjectCards
-          title={"Restaurant-page"}
-          description={
-            "This is a single-page application,  created to learn npm, Less and Webpack. This project has also expanded my knowledge of ES6 module-based programming and dynamic DOM manipulation."
-          }
-          technology={["HTML", "Less", "javaScript", "Webpack"]}
-          demoLink={"https://gsingh1994.github.io/restaurant-page/"}
-          sourceLink={"https://github.com/GSingh1994/restaurant-page"}
+          demoLink="https://gagansingh.dev"
+          sourceLink="https://github.com/GSingh1994/portfolioV2"
         />
 
         <ProjectCards
-          title={"Rock-Paper Scissors"}
-          description={
-            "simple implementation of classic game where you play against the computer. User can enter the number of rounds he/she want to play. The Computer moves are randomly generated by js."
-          }
+          title="Rock-Paper Scissors"
+          description="simple implementation of classic game where you play against the computer. User can enter the number of rounds he/she want to play. The Computer moves are randomly generated by js."
           technology={["HTML", "CSS", "javaScript"]}
-          demoLink={"https://gsingh1994.github.io/RPS_Game/"}
-          sourceLink={"https://github.com/GSingh1994/RPS_Game"}
+          demoLink="https://gsingh1994.github.io/RPS_Game/"
+          sourceLink="https://github.com/GSingh1994/RPS_Game"
         />
+        <div className={showMore ? "showMore" : "showLess"}>
+          <ProjectCards
+            title="Weather Widget"
+            description=""
+            technology={["React", "openWeather API"]}
+            demoLink="https://weather999.netlify.app/"
+            sourceLink="https://github.com/GSingh1994/weather-app"
+          />
+        </div>
+        <div className={showMore ? "showMore" : "showLess"}>
+          <ProjectCards
+            title="Restaurant-page"
+            // description="This is a single-page application,  created to learn npm, Less and Webpack. This project has also expanded my knowledge of ES6 module-based programming and dynamic DOM manipulation."
+            description=""
+            technology={["HTML", "Less", "javaScript", "Webpack"]}
+            demoLink="https://gsingh1994.github.io/restaurant-page/"
+            sourceLink="https://github.com/GSingh1994/restaurant-page"
+          />
+        </div>
+
+        <div className={showMore ? "showMore" : "showLess"}>
+          <ProjectCards
+            title="Library App"
+            // description="I made this app to store books that I've read so far. This app helped in fully understanding Constructors and prototypal inheritance. All book images are fetched from Google books API and user's data is also saved on the browser's local storage."
+            description=""
+            technology={["HTML", "SASS", "javaScript"]}
+            demoLink="https://gsingh1994.github.io/Library_App/"
+            sourceLink="https://github.com/GSingh1994/Library_App"
+          />
+        </div>
+
+        <div className={showMore ? "showMore" : "showLess"}>
+          <ProjectCards
+            title="Tic Tac Toe"
+            description=""
+            technology={["HTML", "CSS", "javaScript"]}
+            demoLink="https://gsingh1994.github.io/TicTacToe_game/"
+            sourceLink="https://github.com/GSingh1994/TicTacToe_game"
+          />
+        </div>
+        <div className={showMore ? "showMore" : "showLess"}>
+          <ProjectCards
+            title="Calculator"
+            description=""
+            technology={["HTML", "CSS", "javaScript"]}
+            demoLink="https://gsingh1994.github.io/calculator/"
+            sourceLink="https://github.com/GSingh1994/calculator"
+          />
+        </div>
+        <div className={showMore ? "showMore" : "showLess"}>
+          <ProjectCards
+            title="Etch A Sketch"
+            description=""
+            technology={["HTML", "CSS", "javaScript"]}
+            demoLink="https://gsingh1994.github.io/Etch_A_Sketch/"
+            sourceLink="https://github.com/GSingh1994/Etch_A_Sketch"
+          />
+        </div>
       </div>
-      <a
-        href="https://old-folioport.netlify.app/more.html"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <button className="moreBtn">See More</button>
-      </a>
+
+      <button onClick={() => setShowMore(!showMore)} className="moreBtn">
+        {showMore ? "See Less" : "See More"}
+      </button>
     </div>
   );
 };

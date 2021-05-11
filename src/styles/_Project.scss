@@ -111,3 +111,32 @@
     }
   }
 }
+
+.showMore {
+  opacity: 1;
+  display: block;
+  -webkit-animation: fadeIn 1s;
+
+  animation: fadeIn 1s;
+}
+
+.showLess {
+  display: none;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
