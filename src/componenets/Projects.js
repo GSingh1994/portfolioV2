@@ -12,7 +12,7 @@ const Projects = () => {
       <div className="container">
         <ProjectCards
           title="Easy CV"
-          description="Single page React app made while learing react hooks. User can easily create,edit and download resume in pdf format. User can also preview resume while editing because everything is rendered in real-time. "
+          description="Single page React app made while learning react hooks. User can easily create, edit and download resume in pdf format. User can also preview resume while editing because everything is rendered in real-time. "
           technology={["React", "SASS", "React-Pdf"]}
           demoLink="https://gsingh1994.github.io/cv-project/"
           sourceLink="https://github.com/GSingh1994/cv-project"
@@ -20,7 +20,7 @@ const Projects = () => {
 
         <ProjectCards
           title="Shoppies"
-          description="This app was created to get qualified for Shopify's Front-end internship. User can search any movie by title and  press the nominate button to add any 5 movies to the nomination list. This App use local storage to save user's data."
+          description="This app was created to get qualified for Shopify's Front-end internship. User can search any movie by title and  press the nominate button to add any 5 movies to the nomination list. This App uses local storage to save user's data."
           technology={["React", "Material Ui", "OMDB API"]}
           demoLink="https://gsingh1994.github.io/shopifyChallenge/"
           sourceLink="https://github.com/GSingh1994/shopifyChallenge"
