@@ -73,6 +73,15 @@ const Projects = () => {
         />
         <div className={showMore ? "showMore" : "showLess"}>
           <ProjectCards
+            title="PokeCards"
+            description=""
+            technology={["React", "Poke API", "SASS"]}
+            demoLink="https://gsingh1994.github.io/poke-memo/"
+            sourceLink="https://github.com/GSingh1994/poke-memo"
+          />
+        </div>
+        <div className={showMore ? "showMore" : "showLess"}>
+          <ProjectCards
             title="Weather Widget"
             description=""
             technology={["React", "openWeather API"]}
