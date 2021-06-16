@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
 
       <div className="madeWith">
-        Made with <span>☕</span>{" "}
+        Made with <span>☕</span>
       </div>
     </div>
   );
