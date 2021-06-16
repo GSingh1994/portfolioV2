@@ -7,7 +7,7 @@ const Intro = () => {
       <div className="typewriter">
         <TypeIt
           options={{
-            strings: ["{Gagandeep Singh}"],
+            strings: ["Gagandeep Singh"],
             speed: 150,
             waitUntilVisible: true,
             cursor: false,
@@ -15,7 +15,7 @@ const Intro = () => {
         />
       </div>
 
-      <div className="moreInfo">I am a self-taught web developer.</div>
+      <div className="moreInfo">I am a Front-end web developer.</div>
     </div>
   );
 };

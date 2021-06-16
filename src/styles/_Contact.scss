@@ -50,6 +50,11 @@
       background-color: $primary-clr;
       text-transform: uppercase;
       border: 1px solid $dark-secondary;
+      cursor: pointer;
+      transition: all 0.1s ease-in;
+      &:hover {
+        background-color: darken($primary-clr, 10%);
+      }
       img {
         width: 0.8rem;
         margin-left: 0.3rem;

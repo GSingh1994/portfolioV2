@@ -1,6 +1,7 @@
 @import "common";
 
 .Navbar {
+  z-index: 999;
   color: $tertiary-clr;
   position: fixed;
   top: 0;

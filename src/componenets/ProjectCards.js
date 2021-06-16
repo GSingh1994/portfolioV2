@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import gitLogo from "../assets/logo-github.svg";
 const ProjectCards = ({
   title,
@@ -6,13 +10,17 @@ const ProjectCards = ({
   demoLink,
   sourceLink,
 }) => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   const techItems = technology.map((tech, i) => (
     <li key={i} className="tech">
       {tech}
     </li>
   ));
   return (
-    <div className="project-card">
+    <div data-aos="fade-up" className="project-card">
       <div>
         <h3 className="title">{title}</h3>
         <div className="description">{description}</div>
