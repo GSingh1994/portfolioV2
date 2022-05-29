@@ -1,10 +1,14 @@
-@import "common";
+@import 'common';
 
 .Contact {
   margin: 0 auto;
   padding: 0 2rem;
   color: $tertiary-clr;
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+
+  p {
+    line-height: 1.5rem;
+  }
 
   @include breakpoint($phone) {
     padding: 0 3rem;

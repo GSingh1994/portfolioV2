@@ -1,4 +1,4 @@
-import TypeIt from "typeit-react";
+import TypeIt from 'typeit-react';
 
 const Intro = () => {
   return (
@@ -7,15 +7,15 @@ const Intro = () => {
       <div className="typewriter">
         <TypeIt
           options={{
-            strings: ["Gagandeep Singh"],
-            speed: 150,
+            strings: ['Gagandeep Singh'],
+            speed: 50,
             waitUntilVisible: true,
             cursor: false,
           }}
         />
       </div>
 
-      <div className="moreInfo">I am a Front-end web developer.</div>
+      <div className="moreInfo">I am a Full-stack web developer.</div>
     </div>
   );
 };

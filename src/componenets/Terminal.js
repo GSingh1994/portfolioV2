@@ -1,7 +1,7 @@
-import minBtn from "../assets/min-btn.svg";
-import maxBtn from "../assets/restore-btn.svg";
-import closeBtn from "../assets/close-btn.svg";
-import resume from "../assets/gSingh.pdf";
+import minBtn from '../assets/min-btn.svg';
+import maxBtn from '../assets/restore-btn.svg';
+import closeBtn from '../assets/close-btn.svg';
+import resume from '../assets/gSingh.pdf';
 const Terminal = () => {
   return (
     <div className="Terminal" id="Terminal">
@@ -15,23 +15,21 @@ const Terminal = () => {
       </div>
       <div className="main">
         <div className="object">
-          <div className="key">{"> gagan.location"}</div>
+          <div className="key">{'> gagan.location'}</div>
           <div className="value">Winnipeg, Manitoba</div>
         </div>
         <div className="object">
-          <div className="key">{"> gagan.education"}</div>
-          <div className="value">React Bootcamp - ComIT</div>
+          <div className="key">{'> gagan.education'}</div>
+          <div className="value">Web developer bootcamp - LHL</div>
         </div>
         <div className="object">
-          <div className="key">{"> gagan.contact"}</div>
+          <div className="key">{'> gagan.contact'}</div>
           <div className="value">
-            <a href="mailto:singh.gagandeep0034@gmail.com">
-              singh.gagandeep0034@gmail.com
-            </a>
+            <a href="mailto:singh.gagandeep0034@gmail.com">singh.gagandeep0034@gmail.com</a>
           </div>
         </div>
         <div className="object">
-          <div className="key">{"> gagan.resume"}</div>
+          <div className="key">{'> gagan.resume'}</div>
           <div className="value">
             <a href={resume} target="_blank" rel="noreferrer">
               gSingh.pdf
@@ -39,25 +37,19 @@ const Terminal = () => {
           </div>
         </div>
         <div className="object">
-          <div className="key">{"> gagan.skills"}</div>
-          <div className="value">
-            [HTML, CSS, javaScript, React, jQuery, SASS,Less, Bootstrap, Git,
-            Webpack, Linux]
-          </div>
+          <div className="key">{'> gagan.skills'}</div>
+          <div className="value">[HTML, CSS, javaScript, React, Express, PostgresSQL, Ruby, Rails, Node.js, jQuery, SASS, Bootstrap, Git, Jest, Cypress, Linux]</div>
         </div>
         <div className="object">
-          <div className="key">{"> gagan.languages"}</div>
+          <div className="key">{'> gagan.languages'}</div>
           <div className="value">[English, Punjabi, Hindi, Urdu]</div>
         </div>
         <div className="object">
-          <div className="key">{"> gagan.interests"}</div>
-          <div className="value">
-            [Coding, Book reading,Listening Podcasts, Writing, building PCs,
-            Tweaking Raspberry π]
-          </div>
+          <div className="key">{'> gagan.interests'}</div>
+          <div className="value">[Coding, Book reading,Listening Podcasts, Writing, building PCs, Tweaking Raspberry π]</div>
         </div>
         <div className="lastLine">
-          {">"} <div className="cursor"></div>
+          {'>'} <div className="cursor"></div>
         </div>
       </div>
     </div>
