@@ -5,13 +5,19 @@ const Projects = () => {
   return (
     <div className="Projects" id="Projects">
       <h2>{"> Projects"}</h2>
-      <blockquote>
-        "Talk is cheap. Show me the code." - Linus Torvalds
-      </blockquote>
+      <blockquote>"Talk is cheap. Show me the code." - Linus Torvalds</blockquote>
 
       <div className="container">
         <ProjectCards
-          title="Easy CV"
+          title="Pixelcide"
+          description="Online co-op game using standard 54 card deck where up to 4 players go against a castle deck consisting of evil King, Queen and Jack and they need to defeat this deck together to win the game."
+          technology={["React", "Framer motion", "Express", "PostgreSQL", "Socket.io"]}
+          demoLink="https://pixelcide.netlify.app/"
+          sourceLink="https://github.com/GSingh1994/pixelcide"
+        />
+
+        <ProjectCards
+          title="Resume maker"
           description="Single page React app made while learning react hooks. User can easily create, edit and download resume in pdf format. User can also preview resume while editing because everything is rendered in real-time. "
           technology={["React", "SASS", "React-Pdf"]}
           demoLink="https://gsingh1994.github.io/cv-project/"
@@ -19,20 +25,13 @@ const Projects = () => {
         />
 
         <ProjectCards
-          title="Shoppies"
-          description="This app was created to get qualified for Shopify's Front-end internship. User can search any movie by title and  press the nominate button to add any 5 movies to the nomination list. This App uses local storage to save user's data."
-          technology={["React", "Material Ui", "OMDB API"]}
-          demoLink="https://gsingh1994.github.io/shopifyChallenge/"
-          sourceLink="https://github.com/GSingh1994/shopifyChallenge"
+          title="Interview Scheduler"
+          description="Interview Scheduler is a single page app that simulates a web portal that allows students to view and book appointments with instructors. It was made to learn end-to-end testing"
+          technology={["React", "Axios", "Storybook", "Cypress"]}
+          demoLink="https://github.com/GSingh1994/scheduler"
+          sourceLink="https://github.com/GSingh1994/scheduler"
         />
 
-        <ProjectCards
-          title="G-Tech"
-          description="An e-commerce website made while studying at the Boot camp by ComIT. This was my final project at ComIT made to showcase my understanding of React, React-Router and Bootstrap."
-          technology={["React", "Bootstrap", "javaScript"]}
-          demoLink="https://g-tech.netlify.app/"
-          sourceLink="https://github.com/GSingh1994/Final_Project"
-        />
         <ProjectCards
           title="Tech Docs"
           description="PWA made to save my programming notes and some useful web-dev tools that I refer on regular basis. When I start learning code, I couldn't able to find any minimal web-app for this so, I decided to make my own."
@@ -45,18 +44,11 @@ const Projects = () => {
           title="gagansingh.dev"
           description={
             <div>
-              It's the site you are currently visiting. It's an updated version
-              of my{" "}
-              <a
-                href="https://old-folioport.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              It's the site you are currently visiting. It's an updated version of my{" "}
+              <a href="https://old-folioport.netlify.app/" target="_blank" rel="noreferrer">
                 old dev portfolio
               </a>
-              . Everything is responsive and the logo-animation was made in
-              Figma. This website was made after learning Figma and react
-              animations.
+              . Everything is responsive and the logo-animation was made in Figma. This website was made after learning Figma and react animations.
             </div>
           }
           technology={["SASS", "React", "Figma"]}
@@ -78,6 +70,15 @@ const Projects = () => {
             technology={["React", "Poke API", "SASS"]}
             demoLink="https://gsingh1994.github.io/poke-memo/"
             sourceLink="https://github.com/GSingh1994/poke-memo"
+          />
+        </div>
+        <div className={showMore ? "showMore" : "showLess"}>
+          <ProjectCards
+            title="Shoppies"
+            description=""
+            technology={["React", "Material Ui", "OMDB API"]}
+            demoLink="https://gsingh1994.github.io/shopifyChallenge/"
+            sourceLink="https://github.com/GSingh1994/shopifyChallenge"
           />
         </div>
         <div className={showMore ? "showMore" : "showLess"}>
