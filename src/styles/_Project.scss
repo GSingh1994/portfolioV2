@@ -75,7 +75,9 @@
   .techItems {
     display: flex;
     color: $tertiary-clr;
-    margin-top: 1rem;
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+    width: max-content;
     .tech {
       border: 1px solid rgba(241, 182, 49, 0.5);
       background-color: rgba(206, 216, 222, 0.1);

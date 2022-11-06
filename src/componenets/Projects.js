@@ -63,6 +63,17 @@ const Projects = () => {
           demoLink="https://gsingh1994.github.io/RPS_Game/"
           sourceLink="https://github.com/GSingh1994/RPS_Game"
         />
+
+        <div className={showMore ? "showMore" : "showLess"}>
+          <ProjectCards
+            title="Tweeter"
+            description=""
+            technology={["HTML", "Express", "SASS", "javaScript"]}
+            demoLink="https://tweeter-singh.herokuapp.com/"
+            sourceLink="https://github.com/GSingh1994/Tweeter"
+          />
+        </div>
+
         <div className={showMore ? "showMore" : "showLess"}>
           <ProjectCards
             title="PokeCards"
@@ -79,6 +90,16 @@ const Projects = () => {
             technology={["React", "Material Ui", "OMDB API"]}
             demoLink="https://gsingh1994.github.io/shopifyChallenge/"
             sourceLink="https://github.com/GSingh1994/shopifyChallenge"
+          />
+        </div>
+
+        <div className={showMore ? "showMore" : "showLess"}>
+          <ProjectCards
+            title="To-Do List"
+            description=""
+            technology={["React", "SASS", "Motion-framer"]}
+            demoLink="https://gsingh1994.github.io/react-crud/"
+            sourceLink="https://github.com/GSingh1994/react-crud"
           />
         </div>
         <div className={showMore ? "showMore" : "showLess"}>
@@ -98,17 +119,6 @@ const Projects = () => {
             technology={["HTML", "Less", "javaScript", "Webpack"]}
             demoLink="https://gsingh1994.github.io/restaurant-page/"
             sourceLink="https://github.com/GSingh1994/restaurant-page"
-          />
-        </div>
-
-        <div className={showMore ? "showMore" : "showLess"}>
-          <ProjectCards
-            title="Library App"
-            // description="I made this app to store books that I've read so far. This app helped in fully understanding Constructors and prototypal inheritance. All book images are fetched from Google books API and user's data is also saved on the browser's local storage."
-            description=""
-            technology={["HTML", "SASS", "javaScript"]}
-            demoLink="https://gsingh1994.github.io/Library_App/"
-            sourceLink="https://github.com/GSingh1994/Library_App"
           />
         </div>
 
